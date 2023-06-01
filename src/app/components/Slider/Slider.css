@@ -1,0 +1,40 @@
+/* Define os estilos para a classe "swiper-container" */
+.swiper-wrapper {
+    width: 100%;
+    height: 500px;
+    background: red;
+  }
+  
+  /* Define os estilos para a classe "swiper-slide" */
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Define os estilos para a classe "swiper-button-next" e "swiper-button-prev" */
+  .swiper-button-next, .swiper-button-prev {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  /* Define os estilos para a classe "swiper-pagination-bullet" */
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  /* Define os estilos para a classe "swiper-pagination-bullet-active" */
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }

@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "MENU-CocoGothic_trial";
+  src: url("/fonts/MENU-CocoGothic_trial.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TITLE-Catchy_Mager_Regular";
+  src: url("/fonts/TITLE-Catchy_Mager_Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "TITLE-Catchy_Mager_Regular";
+  src: url("/fonts/TITLE-Catchy_Mager_Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul > a li {
+  font-family: "MENU-CocoGothic_trial";
+  src: url("/fonts/MENU-CocoGothic_trial.ttf");
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 52px;
+}
+
+.subtitle,
+.submitform span {
+  font-family: "MENU-CocoGothic_trial";
+  src: url("/fonts/MENU-CocoGothic_trial.ttf");
+}
+
+input[type="text"] {
+  font-family: "Arial";
+}
+* {
+  font-family: custom;
+}
+
+img,
+video {
+  max-width: none;
+}
+
+.menu {
+  font-family: "MENU-CocoGothic_trial", sans-serif;
+  letter-spacing: 2px;
+  line-height: 52px;
+}
+
+.title {
+  font-family: "TITLE-Catchy_Mager_Regular", sans-serif;
+}
+
+* {
+  font-family: custom;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pulse-custom {
+  animation: pulse 1.6s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+nav {
+  position: fixed;
+  transition: top 1s ease-in-out;
+}
+
+.show-nav {
+  top: 0px;
+}
+
+.hide-nav {
+  top: -200px;
+}
+
+.image-enter {
+  opacity: 0;
+}
+
+.image-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.image-exit {
+  opacity: 1;
+}
+
+.image-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.break-words-anywhere {
+  line-break: anywhere;
+}
+
+.react-icons > svg {
+  vertical-align: middle;
+}
+
+.airBnb:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.airBnb:not(:hover) {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  #home {
+    background-position: center center;
+    background-size: 1630px;
+    background-position: -538px 0px;
+  }
+}
